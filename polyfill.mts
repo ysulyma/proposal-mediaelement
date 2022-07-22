@@ -213,6 +213,9 @@ export class SyntheticMediaElement implements MediaElement {
    * @emits timeupdate
    */
   private __advance(t: number): void {
+    // use seconds not milliseconds
+    t /= 1000;
+
     // paused
     if (this.paused || this.__seeking) {
       this.__startTime = t;

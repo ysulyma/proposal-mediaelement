@@ -150,6 +150,8 @@ export class SyntheticMediaElement {
      * @emits timeupdate
      */
     __advance(t) {
+        // use seconds not milliseconds
+        t /= 1000;
         // paused
         if (this.paused || this.__seeking) {
             this.__startTime = t;
