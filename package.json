@@ -1,0 +1,20 @@
+{
+  "name": "proposal-mediaelement",
+  "version": "1.0.0",
+  "description": "Proposal and polyfill for MediaElement and SyntheticMediaElement",
+  "module": "polyfill.mjs",
+  "typings": "polyfill.d.mts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ysulyma/proposal-mediaelement.git"
+  },
+  "author": "Yuri Sulyma <yuri@liqvidjs.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ysulyma/proposal-mediaelement/issues"
+  },
+  "homepage": "https://github.com/ysulyma/proposal-mediaelement#readme",
+  "dependencies": {
+    "typescript": "^4.7.4"
+  }
+}

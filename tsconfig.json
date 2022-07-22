@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "declaration": true,
+    "lib": ["esnext", "dom"],
+    "module": "esnext",
+    "pretty": true,
+    "removeComments": false,
+    "target": "esnext"
+  },
+  "files": ["polyfill.mts"]
+}
