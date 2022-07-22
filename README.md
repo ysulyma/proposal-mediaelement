@@ -43,6 +43,12 @@ It also supports `addEventListener` and `removeEventListener` with the following
 
 The `SyntheticMediaElement` class implements `MediaElement`.
 
+## Polyfill
+
+Polyfill: [mjs](https://github.com/ysulyma/proposal-mediaelement/blob/main/polyfill.mjs), [types](https://github.com/ysulyma/proposal-mediaelement/blob/main/polyfill.d.mts), [source](https://github.com/ysulyma/proposal-mediaelement/blob/main/polyfill.mts).
+
+This polyfill is based on Liqvid's [`Playback`](https://github.com/liqvidjs/liqvid/blob/main/packages/playback/src/core.ts) class. However, due to design errors that class does not currently implement `MediaElement` as defined above (it measures `currentTime` in milliseconds rather than seconds, and some of the event names are different).
+
 ## Enhancements
 
 All three reference libraries implement additional functionality beyond the `MediaElement` interface defined above. We have not included these in the proposal since they violate the desideratum that the existing `HTMLMediaElement` must implement `MediaElement`. However, they are useful to keep in mind.
